@@ -1,0 +1,1587 @@
+{
+  "nodes": [
+    {
+      "id": "Banská Bystrica",
+      "lng": 19.175134,
+      "lat": 48.737045
+    },
+    {
+      "id": "Banská Štiavnica",
+      "lng": 18.921032,
+      "lat": 48.439969
+    },
+    {
+      "id": "Barca",
+      "lng": 21.275586,
+      "lat": 48.681516
+    },
+    {
+      "id": "Barca St. 4",
+      "lng": 21.273636,
+      "lat": 48.668108
+    },
+    {
+      "id": "Barca stav.1-spojovacia koľaj č.101",
+      "lng": 21.275586,
+      "lat": 48.681516
+    },
+    {
+      "id": "Barca stav.1-spojovacia koľaj č.102",
+      "lng": 21.272506,
+      "lat": 48.690128
+    },
+    {
+      "id": "Bardejov",
+      "lng": 21.28395,
+      "lat": 49.30088
+    },
+    {
+      "id": "Bačka ŠRT",
+      "lng": 22.008669,
+      "lat": 48.402574
+    },
+    {
+      "id": "Bratislava filiálka",
+      "lng": 17.12548,
+      "lat": 48.158647
+    },
+    {
+      "id": "Bratislava hlavná stanica",
+      "lng": 17.110816,
+      "lat": 48.158576
+    },
+    {
+      "id": "Bratislava odst.st.",
+      "lng": 17.122993,
+      "lat": 48.172462
+    },
+    {
+      "id": "Bratislava predmestie",
+      "lng": 17.14398,
+      "lat": 48.17339
+    },
+    {
+      "id": "Bratislava východ",
+      "lng": 17.162833,
+      "lat": 48.19858
+    },
+    {
+      "id": "Bratislava východ odch. sk. Juh",
+      "lng": 17.201549,
+      "lat": 48.19414
+    },
+    {
+      "id": "Bratislava-Nové Mesto",
+      "lng": 17.14767,
+      "lat": 48.171985
+    },
+    {
+      "id": "Bratislava-Petržalka",
+      "lng": 17.14767,
+      "lat": 48.171985
+    },
+    {
+      "id": "Bratislava-Petržalka št. hr.",
+      "lng": 17.084211,
+      "lat": 48.102791
+    },
+    {
+      "id": "Bratislava-Rača",
+      "lng": 17.158844,
+      "lat": 48.207098
+    },
+    {
+      "id": "Bratislava-Vajnory",
+      "lng": 17.20167,
+      "lat": 48.194154
+    },
+    {
+      "id": "Bratislava-Vinohrady",
+      "lng": 17.133113,
+      "lat": 48.18229
+    },
+    {
+      "id": "Breznička",
+      "lng": 19.738677,
+      "lat": 48.421941
+    },
+    {
+      "id": "Brezno-Halny",
+      "lng": 19.666852,
+      "lat": 48.81757
+    },
+    {
+      "id": "Brezová pod Bradlom",
+      "lng": 17.533502,
+      "lat": 48.651539
+    },
+    {
+      "id": "Budatín odb.",
+      "lng": 18.734541,
+      "lat": 49.234044
+    },
+    {
+      "id": "Bánovce nad Ondavou",
+      "lng": 21.836927,
+      "lat": 48.681425
+    },
+    {
+      "id": "Bánovce nad Ondavou odb.",
+      "lng": 21.844667,
+      "lat": 48.689195
+    },
+    {
+      "id": "Chvatimech",
+      "lng": 19.55905,
+      "lat": 48.80339
+    },
+    {
+      "id": "Chynorany",
+      "lng": 18.277434,
+      "lat": 48.608901
+    },
+    {
+      "id": "Devínska Nová Ves",
+      "lng": 16.974366,
+      "lat": 48.221836
+    },
+    {
+      "id": "Devínska Nová Ves št. hr.",
+      "lng": 16.9467,
+      "lat": 48.24122
+    },
+    {
+      "id": "Dobšiná",
+      "lng": 20.381189,
+      "lat": 48.816717
+    },
+    {
+      "id": "Dražovce rampa",
+      "lng": 18.054562,
+      "lat": 48.357801
+    },
+    {
+      "id": "Dunajská Streda",
+      "lng": 17.611722,
+      "lat": 47.991931
+    },
+    {
+      "id": "Fiľakovo",
+      "lng": 19.834186,
+      "lat": 48.263763
+    },
+    {
+      "id": "Fiľakovo St. 3",
+      "lng": 19.82842,
+      "lat": 48.272563
+    },
+    {
+      "id": "Fiľakovo št. hr.",
+      "lng": 19.820035,
+      "lat": 48.167895
+    },
+    {
+      "id": "Galanta",
+      "lng": 17.718172,
+      "lat": 48.185437
+    },
+    {
+      "id": "Handlová",
+      "lng": 18.753881,
+      "lat": 48.722177
+    },
+    {
+      "id": "Haniska pri Košiciach ŠRT",
+      "lng": 21.251958,
+      "lat": 48.633224
+    },
+    {
+      "id": "Hatalov odb.",
+      "lng": 21.845617,
+      "lat": 48.681855
+    },
+    {
+      "id": "Holíč nad Moravou",
+      "lng": 17.149387,
+      "lat": 48.814126
+    },
+    {
+      "id": "Holíč nad Moravou št. hr.",
+      "lng": 17.127029,
+      "lat": 48.837041
+    },
+    {
+      "id": "Horná Štubňa",
+      "lng": 18.880889,
+      "lat": 48.795623
+    },
+    {
+      "id": "Horné Srnie št. hr.",
+      "lng": 18.05725,
+      "lat": 49.028503
+    },
+    {
+      "id": "Hronec",
+      "lng": 19.578556,
+      "lat": 48.799025
+    },
+    {
+      "id": "Hronská Dúbrava",
+      "lng": 18.983051,
+      "lat": 48.582603
+    },
+    {
+      "id": "Humenné",
+      "lng": 21.904281,
+      "lat": 48.930976
+    },
+    {
+      "id": "Jablngica",
+      "lng": 17.412436,
+      "lat": 48.605718
+    },
+    {
+      "id": "Jaklovce",
+      "lng": 21.016092,
+      "lat": 48.889823
+    },
+    {
+      "id": "Jelšovce",
+      "lng": 18.049792,
+      "lat": 48.381749
+    },
+    {
+      "id": "Jesenské",
+      "lng": 20.066129,
+      "lat": 48.299511
+    },
+    {
+      "id": "Kapušany pri Prešove",
+      "lng": 21.324403,
+      "lat": 49.045088
+    },
+    {
+      "id": "Katarínska Huta",
+      "lng": 19.634267,
+      "lat": 48.465506
+    },
+    {
+      "id": "Kolárovo",
+      "lng": 17.983256,
+      "lat": 47.91437
+    },
+    {
+      "id": "Komárno",
+      "lng": 18.12068,
+      "lat": 47.768034
+    },
+    {
+      "id": "Komárno zriaďovacia stanica výh.1",
+      "lng": 18.109869,
+      "lat": 47.76387
+    },
+    {
+      "id": "Komárno zriaďovacia stanica výh.18",
+      "lng": 18.126054,
+      "lat": 47.755597
+    },
+    {
+      "id": "Komárno št. hr.",
+      "lng": 18.086881,
+      "lat": 47.756662
+    },
+    {
+      "id": "Kozárovce",
+      "lng": 18.535043,
+      "lat": 48.308268
+    },
+    {
+      "id": "Košice",
+      "lng": 21.267255,
+      "lat": 48.725796
+    },
+    {
+      "id": "Košice stav.1",
+      "lng": 21.273212,
+      "lat": 48.688106
+    },
+    {
+      "id": "Košice stav.2",
+      "lng": 21.270444,
+      "lat": 48.721017
+    },
+    {
+      "id": "Kraľovany",
+      "lng": 19.134375,
+      "lat": 49.153475
+    },
+    {
+      "id": "Krupina",
+      "lng": 19.068353,
+      "lat": 48.345692
+    },
+    {
+      "id": "Krásna nad Hornádom",
+      "lng": 21.293037,
+      "lat": 48.671539
+    },
+    {
+      "id": "Kysak",
+      "lng": 21.215791,
+      "lat": 48.861687
+    },
+    {
+      "id": "Kúty",
+      "lng": 17.049287,
+      "lat": 48.664517
+    },
+    {
+      "id": "Kúty št. hr.",
+      "lng": 17.000196,
+      "lat": 48.711197
+    },
+    {
+      "id": "Lastovce",
+      "lng": 21.622059,
+      "lat": 48.533235
+    },
+    {
+      "id": "Lednické Rovne",
+      "lng": 18.287789,
+      "lat": 49.072163
+    },
+    {
+      "id": "Lenartovce",
+      "lng": 20.330352,
+      "lat": 48.302309
+    },
+    {
+      "id": "Lenartovce št. hr.",
+      "lng": 20.339244,
+      "lat": 48.301338
+    },
+    {
+      "id": "Leopoldov",
+      "lng": 17.758978,
+      "lat": 48.443915
+    },
+    {
+      "id": "Levice",
+      "lng": 18.590978,
+      "lat": 48.21375
+    },
+    {
+      "id": "Levoča",
+      "lng": 20.585545,
+      "lat": 49.018747
+    },
+    {
+      "id": "Lisková",
+      "lng": 19.377982,
+      "lat": 49.093297
+    },
+    {
+      "id": "Lučenec",
+      "lng": 19.667594,
+      "lat": 48.335977
+    },
+    {
+      "id": "Lučenec št. hr.",
+      "lng": 19.637186,
+      "lat": 48.245995
+    },
+    {
+      "id": "Lužianky",
+      "lng": 18.023154,
+      "lat": 48.354687
+    },
+    {
+      "id": "Lúky pod Makytou št. hr.",
+      "lng": 18.128569,
+      "lat": 49.179528
+    },
+    {
+      "id": "Makov",
+      "lng": 18.482353,
+      "lat": 49.371463
+    },
+    {
+      "id": "Malé Straciny",
+      "lng": 19.396679,
+      "lat": 48.207452
+    },
+    {
+      "id": "Malé Straciny št. hr.",
+      "lng": 19.512,
+      "lat": 48.163409
+    },
+    {
+      "id": "Margecany",
+      "lng": 21.014929,
+      "lat": 48.894249
+    },
+    {
+      "id": "Maťovce NR št. hr.",
+      "lng": 22.153861,
+      "lat": 48.561382
+    },
+    {
+      "id": "Maťovce ŠRT št. hr.",
+      "lng": 22.159922,
+      "lat": 48.562286
+    },
+    {
+      "id": "Medzev",
+      "lng": 20.900383,
+      "lat": 48.698708
+    },
+    {
+      "id": "Medzilaborce št. hr.",
+      "lng": 22.038402,
+      "lat": 49.250792
+    },
+    {
+      "id": "Michaľany",
+      "lng": 21.621699,
+      "lat": 48.527355
+    },
+    {
+      "id": "Moldava nad Bodvou",
+      "lng": 21.000977,
+      "lat": 48.603716
+    },
+    {
+      "id": "Muráň",
+      "lng": 20.050383,
+      "lat": 48.741766
+    },
+    {
+      "id": "Neded",
+      "lng": 17.962536,
+      "lat": 48.014932
+    },
+    {
+      "id": "Nemšová",
+      "lng": 18.117204,
+      "lat": 48.970589
+    },
+    {
+      "id": "Nitrianske Pravno",
+      "lng": 18.634557,
+      "lat": 48.866132
+    },
+    {
+      "id": "Nižný Hrabovec",
+      "lng": 21.816279,
+      "lat": 48.861153
+    },
+    {
+      "id": "Nové Mesto nad Váhom",
+      "lng": 17.834324,
+      "lat": 48.7476
+    },
+    {
+      "id": "Nové Mesto nad Váhom výh. č. 48/49",
+      "lng": 17.834465,
+      "lat": 48.737615
+    },
+    {
+      "id": "Nové Mesto nad Váhom výh. č. 53/54",
+      "lng": 17.825778,
+      "lat": 48.740151
+    },
+    {
+      "id": "Nové Zámky",
+      "lng": 18.160552,
+      "lat": 48.003086
+    },
+    {
+      "id": "Obišovce",
+      "lng": 21.227012,
+      "lat": 48.858894
+    },
+    {
+      "id": "Odb. Dolná Štubňa",
+      "lng": 18.864471,
+      "lat": 48.828675
+    },
+    {
+      "id": "Odb. Močiar",
+      "lng": 17.150342,
+      "lat": 48.188595
+    },
+    {
+      "id": "Odb. Potok",
+      "lng": 18.868165,
+      "lat": 49.196116
+    },
+    {
+      "id": "Odb. Váh",
+      "lng": 18.799809,
+      "lat": 49.212924
+    },
+    {
+      "id": "Palárikovo",
+      "lng": 18.084231,
+      "lat": 48.058221
+    },
+    {
+      "id": "Piešťany",
+      "lng": 17.812193,
+      "lat": 48.592778
+    },
+    {
+      "id": "Pionier",
+      "lng": 21.182489,
+      "lat": 48.760307
+    },
+    {
+      "id": "Plavecký Mikuláš",
+      "lng": 17.285938,
+      "lat": 48.521227
+    },
+    {
+      "id": "Plaveč",
+      "lng": 20.867149,
+      "lat": 49.277282
+    },
+    {
+      "id": "Plaveč výh. č. 5/6",
+      "lng": 20.870418,
+      "lat": 49.270148
+    },
+    {
+      "id": "Plaveč výh. č. 7/8",
+      "lng": 20.860974,
+      "lat": 49.272902
+    },
+    {
+      "id": "Plaveč št. hr.",
+      "lng": 20.924012,
+      "lat": 49.296047
+    },
+    {
+      "id": "Plešivec",
+      "lng": 20.408699,
+      "lat": 48.552662
+    },
+    {
+      "id": "Podbrezová",
+      "lng": 19.527319,
+      "lat": 48.810686
+    },
+    {
+      "id": "Podolínec",
+      "lng": 20.528304,
+      "lat": 49.25743
+    },
+    {
+      "id": "Poprad-Tatry",
+      "lng": 20.309375,
+      "lat": 49.057659
+    },
+    {
+      "id": "Poprad-Tatry TEŽ",
+      "lng": 20.301017,
+      "lat": 49.059498
+    },
+    {
+      "id": "Poprad-Tatry dep. TEŽ",
+      "lng": 20.28631,
+      "lat": 49.061084
+    },
+    {
+      "id": "Prešov",
+      "lng": 21.247792,
+      "lat": 48.986359
+    },
+    {
+      "id": "Priekopa odb.",
+      "lng": 18.939564,
+      "lat": 49.106015
+    },
+    {
+      "id": "Prievidza",
+      "lng": 18.615262,
+      "lat": 48.773134
+    },
+    {
+      "id": "Prievidza St. 3",
+      "lng": 18.617552,
+      "lat": 48.767505
+    },
+    {
+      "id": "Prievidza nákladná stanica",
+      "lng": 18.609173,
+      "lat": 48.767494
+    },
+    {
+      "id": "Púchov",
+      "lng": 18.324005,
+      "lat": 49.106039
+    },
+    {
+      "id": "Radošina",
+      "lng": 17.939796,
+      "lat": 48.548252
+    },
+    {
+      "id": "Rajec",
+      "lng": 18.643308,
+      "lat": 49.088515
+    },
+    {
+      "id": "Rožňava",
+      "lng": 20.516756,
+      "lat": 48.637207
+    },
+    {
+      "id": "Rusovce - km 116.645",
+      "lng": 17.121882,
+      "lat": 48.085598
+    },
+    {
+      "id": "Rusovce št. hr.",
+      "lng": 17.179456,
+      "lat": 48.013744
+    },
+    {
+      "id": "Ružomberok",
+      "lng": 19.321467,
+      "lat": 49.082207
+    },
+    {
+      "id": "Ružomberok malá stanica",
+      "lng": 19.305945,
+      "lat": 49.065366
+    },
+    {
+      "id": "Sereď",
+      "lng": 17.726776,
+      "lat": 48.291462
+    },
+    {
+      "id": "Skalica na Slovensku št. hr.",
+      "lng": 17.239079,
+      "lat": 48.868295
+    },
+    {
+      "id": "Skalité št. hr.",
+      "lng": 18.971885,
+      "lat": 49.50388
+    },
+    {
+      "id": "Slavošovce",
+      "lng": 20.270659,
+      "lat": 48.719147
+    },
+    {
+      "id": "Slovenské Nové Mesto",
+      "lng": 21.667802,
+      "lat": 48.400059
+    },
+    {
+      "id": "Slovenské Nové Mesto št. hr.",
+      "lng": 21.664821,
+      "lat": 48.392012
+    },
+    {
+      "id": "Spišská Belá",
+      "lng": 20.469938,
+      "lat": 49.174658
+    },
+    {
+      "id": "Spišská Nová Ves",
+      "lng": 20.56495,
+      "lat": 48.950015
+    },
+    {
+      "id": "Spišské Podhradie",
+      "lng": 20.75588,
+      "lat": 48.998058
+    },
+    {
+      "id": "Spišské Vlachy",
+      "lng": 20.804568,
+      "lat": 48.935919
+    },
+    {
+      "id": "Stakčín",
+      "lng": 22.221596,
+      "lat": 48.998665
+    },
+    {
+      "id": "Starý Smokovec",
+      "lng": 20.227976,
+      "lat": 49.138489
+    },
+    {
+      "id": "Strážske",
+      "lng": 21.825243,
+      "lat": 48.865103
+    },
+    {
+      "id": "Studený Potok",
+      "lng": 20.355054,
+      "lat": 49.109083
+    },
+    {
+      "id": "Tatranská Lomnica",
+      "lng": 20.278512,
+      "lat": 49.163763
+    },
+    {
+      "id": "Tatranská Lomnica TEŽ",
+      "lng": 20.279708,
+      "lat": 49.165504
+    },
+    {
+      "id": "Tisovec",
+      "lng": 19.933116,
+      "lat": 48.692921
+    },
+    {
+      "id": "Topoľčianky",
+      "lng": 18.408167,
+      "lat": 48.413207
+    },
+    {
+      "id": "Trebišov",
+      "lng": 21.708909,
+      "lat": 48.631397
+    },
+    {
+      "id": "Trenčianska Teplá",
+      "lng": 18.11274,
+      "lat": 48.936885
+    },
+    {
+      "id": "Trenčianske Teplice",
+      "lng": 18.171217,
+      "lat": 48.909969
+    },
+    {
+      "id": "Trenčín",
+      "lng": 18.045706,
+      "lat": 48.897235
+    },
+    {
+      "id": "Trnava",
+      "lng": 17.575077,
+      "lat": 48.365341
+    },
+    {
+      "id": "Trstená",
+      "lng": 19.633594,
+      "lat": 49.364541
+    },
+    {
+      "id": "Turňa nad Bodvou",
+      "lng": 20.884709,
+      "lat": 48.596921
+    },
+    {
+      "id": "Utekáč",
+      "lng": 19.800439,
+      "lat": 48.605167
+    },
+    {
+      "id": "Veľké Bielice",
+      "lng": 18.352666,
+      "lat": 48.624799
+    },
+    {
+      "id": "Veľký Krtíš",
+      "lng": 19.358241,
+      "lat": 48.196238
+    },
+    {
+      "id": "Vranov nad Topľou",
+      "lng": 21.67831,
+      "lat": 48.887184
+    },
+    {
+      "id": "Vrbovce št. hr.",
+      "lng": 17.518815,
+      "lat": 48.829167
+    },
+    {
+      "id": "Vrbové",
+      "lng": 17.732976,
+      "lat": 48.616104
+    },
+    {
+      "id": "Vrútky",
+      "lng": 18.929207,
+      "lat": 49.113222
+    },
+    {
+      "id": "Vrútky nákladná stanica",
+      "lng": 18.957605,
+      "lat": 49.107839
+    },
+    {
+      "id": "Výh. Slivník",
+      "lng": 21.562127,
+      "lat": 48.607031
+    },
+    {
+      "id": "Výh. Urbánka",
+      "lng": 19.847086,
+      "lat": 48.273508
+    },
+    {
+      "id": "Zbehy",
+      "lng": 18.00596,
+      "lat": 48.377263
+    },
+    {
+      "id": "Zlaté Moravce",
+      "lng": 18.377901,
+      "lat": 48.388369
+    },
+    {
+      "id": "Zohor",
+      "lng": 16.992236,
+      "lat": 48.32824
+    },
+    {
+      "id": "Zvolen mesto odb.",
+      "lng": 19.132791,
+      "lat": 48.575753
+    },
+    {
+      "id": "Zvolen nákladná stanica",
+      "lng": 19.14052,
+      "lat": 48.572879
+    },
+    {
+      "id": "Zvolen osobná stanica",
+      "lng": 19.126591,
+      "lat": 48.571746
+    },
+    {
+      "id": "Záhorská Ves",
+      "lng": 16.836536,
+      "lat": 48.379729
+    },
+    {
+      "id": "null",
+      "lng": 18.805844,
+      "lat": 49.210399
+    },
+    {
+      "id": "Úľany nad Žitavou",
+      "lng": 18.235535,
+      "lat": 48.098975
+    },
+    {
+      "id": "Čadca",
+      "lng": 18.792043,
+      "lat": 49.441588
+    },
+    {
+      "id": "Čadca št. hr.",
+      "lng": 18.764301,
+      "lat": 49.494416
+    },
+    {
+      "id": "Čata",
+      "lng": 18.649344,
+      "lat": 47.958094
+    },
+    {
+      "id": "Čaňa št. hr.",
+      "lng": 21.261387,
+      "lat": 48.528513
+    },
+    {
+      "id": "Čermeľ",
+      "lng": 21.228817,
+      "lat": 48.749674
+    },
+    {
+      "id": "Červená Skala",
+      "lng": 20.133007,
+      "lat": 48.820295
+    },
+    {
+      "id": "Čierna nad Tisou",
+      "lng": 22.077468,
+      "lat": 48.417896
+    },
+    {
+      "id": "Čierna nad Tisou ŠRT",
+      "lng": 22.048748,
+      "lat": 48.412015
+    },
+    {
+      "id": "Čierna nad Tisou ŠRT št. hr.",
+      "lng": 22.114167,
+      "lat": 48.425603
+    },
+    {
+      "id": "Čierna nad Tisou št. hr.",
+      "lng": 22.138603,
+      "lat": 48.432917
+    },
+    {
+      "id": "Šahy",
+      "lng": 18.95697,
+      "lat": 48.059195
+    },
+    {
+      "id": "Šaľa",
+      "lng": 17.865849,
+      "lat": 48.145926
+    },
+    {
+      "id": "Štrba",
+      "lng": 20.065631,
+      "lat": 49.083564
+    },
+    {
+      "id": "Štrbské Pleso",
+      "lng": 20.063691,
+      "lat": 49.118169
+    },
+    {
+      "id": "Štrbské Pleso OŽ",
+      "lng": 20.063691,
+      "lat": 49.118169
+    },
+    {
+      "id": "Štátna hranica (MÁV)-ŽST Turňa nad Bodvou",
+      "lng": 20.850022,
+      "lat": 48.579864
+    },
+    {
+      "id": "Štúrovo",
+      "lng": 18.678667,
+      "lat": 47.799911
+    },
+    {
+      "id": "Štúrovo tranzitná skupina",
+      "lng": 18.627267,
+      "lat": 47.806177
+    },
+    {
+      "id": "Štúrovo št. hr.",
+      "lng": 18.852999,
+      "lat": 47.823504
+    },
+    {
+      "id": "Šurany",
+      "lng": 18.173137,
+      "lat": 48.082083
+    },
+    {
+      "id": "Žabokreky nad Nitrou",
+      "lng": 18.278359,
+      "lat": 48.613188
+    },
+    {
+      "id": "Žilina",
+      "lng": 18.73755,
+      "lat": 49.229189
+    },
+    {
+      "id": "Žilina zriaďovacia stanica",
+      "lng": 18.729547,
+      "lat": 49.231101
+    },
+    {
+      "id": "Žilina-Teplička",
+      "lng": 18.820561,
+      "lat": 49.208053
+    },
+    {
+      "id": "Žilina-Teplička odch. sk",
+      "lng": 18.804625,
+      "lat": 49.212292
+    },
+    {
+      "id": "Žilina-Teplička vchod. sk.",
+      "lng": 18.853208,
+      "lat": 49.200247
+    }
+  ],
+  "edges": [
+    {
+      "source": "Štrba",
+      "target": "Štrbské Pleso OŽ"
+    },
+    {
+      "source": "Slovenské Nové Mesto št. hr.",
+      "target": "Slovenské Nové Mesto"
+    },
+    {
+      "source": "Chvatimech",
+      "target": "Hronec"
+    },
+    {
+      "source": "Žabokreky nad Nitrou",
+      "target": "Žabokreky nad Nitrou"
+    },
+    {
+      "source": "Margecany",
+      "target": "Jaklovce"
+    },
+    {
+      "source": "Lisková",
+      "target": "Ružomberok"
+    },
+    {
+      "source": "Trenčianska Teplá",
+      "target": "Horné Srnie št. hr."
+    },
+    {
+      "source": "Kúty",
+      "target": "Skalica na Slovensku št. hr."
+    },
+    {
+      "source": "Čadca",
+      "target": "Skalité št. hr."
+    },
+    {
+      "source": "Košice",
+      "target": "Žilina"
+    },
+    {
+      "source": "Žilina-Teplička",
+      "target": "Odb. Váh"
+    },
+    {
+      "source": "Kraľovany",
+      "target": "Trstená"
+    },
+    {
+      "source": "Poprad-Tatry",
+      "target": "Podolínec"
+    },
+    {
+      "source": "Žilina",
+      "target": "Čadca št. hr."
+    },
+    {
+      "source": "Plaveč",
+      "target": "Podolínec"
+    },
+    {
+      "source": "Poprad-Tatry TEŽ",
+      "target": "Štrbské Pleso"
+    },
+    {
+      "source": "Starý Smokovec",
+      "target": "Tatranská Lomnica TEŽ"
+    },
+    {
+      "source": "Bratislava hlavná stanica",
+      "target": "Žilina zriaďovacia stanica"
+    },
+    {
+      "source": "Galanta",
+      "target": "Leopoldov"
+    },
+    {
+      "source": "Chynorany",
+      "target": "Trenčín"
+    },
+    {
+      "source": "Žilina",
+      "target": "Rajec"
+    },
+    {
+      "source": "Nové Mesto nad Váhom",
+      "target": "Vrbovce št. hr."
+    },
+    {
+      "source": "Devínska Nová Ves",
+      "target": "Kúty"
+    },
+    {
+      "source": "Devínska Nová Ves",
+      "target": "Štúrovo št. hr."
+    },
+    {
+      "source": "Šaľa",
+      "target": "Neded"
+    },
+    {
+      "source": "Ružomberok",
+      "target": "Ružomberok malá stanica"
+    },
+    {
+      "source": "Štúrovo tranzitná skupina",
+      "target": "Štúrovo"
+    },
+    {
+      "source": "Odb. Váh",
+      "target": "Žilina-Teplička odch. sk"
+    },
+    {
+      "source": "Čierna nad Tisou ŠRT št. hr.",
+      "target": "Čierna nad Tisou ŠRT"
+    },
+    {
+      "source": "Zvolen osobná stanica",
+      "target": "Zvolen mesto odb."
+    },
+    {
+      "source": "Komárno",
+      "target": "Komárno"
+    },
+    {
+      "source": "Bratislava-Vinohrady",
+      "target": "Odb. Močiar"
+    },
+    {
+      "source": "Krásna nad Hornádom",
+      "target": "Barca St. 4"
+    },
+    {
+      "source": "Plaveč výh. č. 7/8",
+      "target": "Plaveč výh. č. 5/6"
+    },
+    {
+      "source": "Hronská Dúbrava",
+      "target": "Banská Štiavnica"
+    },
+    {
+      "source": "Banská Bystrica",
+      "target": "Odb. Dolná Štubňa"
+    },
+    {
+      "source": "Úľany nad Žitavou",
+      "target": "Zlaté Moravce"
+    },
+    {
+      "source": "Zlaté Moravce",
+      "target": "Dražovce rampa"
+    },
+    {
+      "source": "Výh. Urbánka",
+      "target": "Fiľakovo St. 3"
+    },
+    {
+      "source": "Poprad-Tatry TEŽ",
+      "target": "Poprad-Tatry dep. TEŽ"
+    },
+    {
+      "source": "Komárno zriaďovacia stanica výh.1",
+      "target": "Komárno zriaďovacia stanica výh.18"
+    },
+    {
+      "source": "Košice stav.2",
+      "target": "Barca stav.1-spojovacia koľaj č.102"
+    },
+    {
+      "source": "Levice",
+      "target": "Úľany nad Žitavou"
+    },
+    {
+      "source": "Rusovce št. hr.",
+      "target": "Rusovce - km 116.645"
+    },
+    {
+      "source": "Košice stav.1",
+      "target": "Barca stav.1-spojovacia koľaj č.101"
+    },
+    {
+      "source": "Žilina zriaďovacia stanica",
+      "target": "Budatín odb."
+    },
+    {
+      "source": "Plešivec",
+      "target": "Slavošovce"
+    },
+    {
+      "source": "Piešťany",
+      "target": "Vrbové"
+    },
+    {
+      "source": "Spišské Vlachy",
+      "target": "Spišské Podhradie"
+    },
+    {
+      "source": "Levice",
+      "target": "Kozárovce"
+    },
+    {
+      "source": "Púchov",
+      "target": "Lúky pod Makytou št. hr."
+    },
+    {
+      "source": "Kapušany pri Prešove",
+      "target": "Bardejov"
+    },
+    {
+      "source": "Jelšovce",
+      "target": "Zbehy"
+    },
+    {
+      "source": "Bratislava východ",
+      "target": "Bratislava-Vinohrady"
+    },
+    {
+      "source": "Kúty",
+      "target": "Kúty št. hr."
+    },
+    {
+      "source": "Michaľany",
+      "target": "Lastovce"
+    },
+    {
+      "source": "Žilina-Teplička odch. sk",
+      "target": "null"
+    },
+    {
+      "source": "Čadca",
+      "target": "Makov"
+    },
+    {
+      "source": "Čermeľ",
+      "target": "Pionier"
+    },
+    {
+      "source": "Fiľakovo št. hr.",
+      "target": "Fiľakovo"
+    },
+    {
+      "source": "Nové Zámky",
+      "target": "Šurany"
+    },
+    {
+      "source": "Kozárovce",
+      "target": "Hronská Dúbrava"
+    },
+    {
+      "source": "Šurany",
+      "target": "Veľké Bielice"
+    },
+    {
+      "source": "Veľké Bielice",
+      "target": "Nitrianske Pravno"
+    },
+    {
+      "source": "Zbehy",
+      "target": "Radošina"
+    },
+    {
+      "source": "Zlaté Moravce",
+      "target": "Kozárovce"
+    },
+    {
+      "source": "Štúrovo",
+      "target": "Levice"
+    },
+    {
+      "source": "Čata",
+      "target": "Šahy"
+    },
+    {
+      "source": "Lužianky",
+      "target": "Leopoldov"
+    },
+    {
+      "source": "Podbrezová",
+      "target": "Brezno-Halny"
+    },
+    {
+      "source": "Zvolen nákladná stanica",
+      "target": "Podbrezová"
+    },
+    {
+      "source": "Jesenské",
+      "target": "Tisovec"
+    },
+    {
+      "source": "Brezno-Halny",
+      "target": "Tisovec"
+    },
+    {
+      "source": "Čierna nad Tisou št. hr.",
+      "target": "Košice"
+    },
+    {
+      "source": "Michaľany",
+      "target": "Medzilaborce št. hr."
+    },
+    {
+      "source": "Strážske",
+      "target": "Prešov"
+    },
+    {
+      "source": "Maťovce NR št. hr.",
+      "target": "Bánovce nad Ondavou"
+    },
+    {
+      "source": "Bratislava-Nové Mesto",
+      "target": "Bratislava-Petržalka"
+    },
+    {
+      "source": "Bratislava-Vinohrady",
+      "target": "Bratislava-Nové Mesto"
+    },
+    {
+      "source": "Bratislava predmestie",
+      "target": "Odb. Močiar"
+    },
+    {
+      "source": "Bratislava hlavná stanica",
+      "target": "Bratislava-Nové Mesto"
+    },
+    {
+      "source": "Bratislava-Nové Mesto",
+      "target": "Dunajská Streda"
+    },
+    {
+      "source": "Komárno",
+      "target": "Dunajská Streda"
+    },
+    {
+      "source": "Komárno",
+      "target": "Kolárovo"
+    },
+    {
+      "source": "Komárno",
+      "target": "Nové Zámky"
+    },
+    {
+      "source": "Lenartovce št. hr.",
+      "target": "Fiľakovo"
+    },
+    {
+      "source": "Fiľakovo",
+      "target": "Vrútky"
+    },
+    {
+      "source": "Prievidza",
+      "target": "Handlová"
+    },
+    {
+      "source": "Lučenec",
+      "target": "Utekáč"
+    },
+    {
+      "source": "Šurany",
+      "target": "Úľany nad Žitavou"
+    },
+    {
+      "source": "Palárikovo",
+      "target": "Šurany"
+    },
+    {
+      "source": "Plešivec",
+      "target": "Rožňava"
+    },
+    {
+      "source": "Turňa nad Bodvou",
+      "target": "Štátna hranica (MÁV)-ŽST Turňa nad Bodvou"
+    },
+    {
+      "source": "Odb. Potok",
+      "target": "Odb. Váh"
+    },
+    {
+      "source": "Žilina-Teplička vchod. sk.",
+      "target": "Odb. Váh"
+    },
+    {
+      "source": "Studený Potok",
+      "target": "Tatranská Lomnica"
+    },
+    {
+      "source": "Obišovce",
+      "target": "Kysak"
+    },
+    {
+      "source": "Bratislava-Petržalka",
+      "target": "Bratislava-Petržalka št. hr."
+    },
+    {
+      "source": "Plešivec",
+      "target": "Muráň"
+    },
+    {
+      "source": "Trebišov",
+      "target": "Výh. Slivník"
+    },
+    {
+      "source": "Spišská Nová Ves",
+      "target": "Levoča"
+    },
+    {
+      "source": "Čaňa št. hr.",
+      "target": "Barca"
+    },
+    {
+      "source": "Kysak",
+      "target": "Plaveč št. hr."
+    },
+    {
+      "source": "Maťovce ŠRT št. hr.",
+      "target": "Haniska pri Košiciach ŠRT"
+    },
+    {
+      "source": "Čierna nad Tisou",
+      "target": "Bačka ŠRT"
+    },
+    {
+      "source": "Bratislava-Rača",
+      "target": "Bratislava-Vajnory"
+    },
+    {
+      "source": "Trnava",
+      "target": "Kúty"
+    },
+    {
+      "source": "Lučenec št. hr.",
+      "target": "Lučenec"
+    },
+    {
+      "source": "Žilina-Teplička",
+      "target": "Žilina"
+    },
+    {
+      "source": "Bratislava-Vinohrady",
+      "target": "Bratislava predmestie"
+    },
+    {
+      "source": "Malé Straciny št. hr.",
+      "target": "Malé Straciny"
+    },
+    {
+      "source": "Hatalov odb.",
+      "target": "Bánovce nad Ondavou odb."
+    },
+    {
+      "source": "Breznička",
+      "target": "Katarínska Huta"
+    },
+    {
+      "source": "Bratislava východ odch. sk. Juh",
+      "target": "Bratislava-Vinohrady"
+    },
+    {
+      "source": "Prievidza nákladná stanica",
+      "target": "Prievidza St. 3"
+    },
+    {
+      "source": "Nové Mesto nad Váhom výh. č. 48/49",
+      "target": "Nové Mesto nad Váhom výh. č. 53/54"
+    },
+    {
+      "source": "Devínska Nová Ves",
+      "target": "Devínska Nová Ves št. hr."
+    },
+    {
+      "source": "Holíč nad Moravou št. hr.",
+      "target": "Holíč nad Moravou"
+    },
+    {
+      "source": "Jablngica",
+      "target": "Brezová pod Bradlom"
+    },
+    {
+      "source": "Sereď",
+      "target": "Trnava"
+    },
+    {
+      "source": "Spišská Belá",
+      "target": "Spišská Belá"
+    },
+    {
+      "source": "Zvolen osobná stanica",
+      "target": "Krupina"
+    },
+    {
+      "source": "Vrútky nákladná stanica",
+      "target": "Priekopa odb."
+    },
+    {
+      "source": "Malé Straciny",
+      "target": "Veľký Krtíš"
+    },
+    {
+      "source": "Bratislava predmestie",
+      "target": "Bratislava filiálka"
+    },
+    {
+      "source": "Žilina zriaďovacia stanica",
+      "target": "Žilina"
+    },
+    {
+      "source": "Horná Štubňa",
+      "target": "Handlová"
+    },
+    {
+      "source": "Nemšová",
+      "target": "Lednické Rovne"
+    },
+    {
+      "source": "Rožňava",
+      "target": "Dobšiná"
+    },
+    {
+      "source": "Brezno-Halny",
+      "target": "Červená Skala"
+    },
+    {
+      "source": "Zlaté Moravce",
+      "target": "Topoľčianky"
+    },
+    {
+      "source": "Trenčianska Teplá",
+      "target": "Trenčianske Teplice"
+    },
+    {
+      "source": "Moldava nad Bodvou",
+      "target": "Medzev"
+    },
+    {
+      "source": "Strážske",
+      "target": "Nižný Hrabovec"
+    },
+    {
+      "source": "Margecany",
+      "target": "Červená Skala"
+    },
+    {
+      "source": "Zohor",
+      "target": "Plavecký Mikuláš"
+    },
+    {
+      "source": "Zohor",
+      "target": "Záhorská Ves"
+    },
+    {
+      "source": "Šahy",
+      "target": "Krupina"
+    },
+    {
+      "source": "Komárno št. hr.",
+      "target": "Komárno"
+    },
+    {
+      "source": "Trebišov",
+      "target": "Vranov nad Topľou"
+    },
+    {
+      "source": "Bratislava hlavná stanica",
+      "target": "Bratislava odst.st."
+    },
+    {
+      "source": "Humenné",
+      "target": "Stakčín"
+    },
+    {
+      "source": "Lenartovce",
+      "target": "Plešivec"
+    },
+    {
+      "source": "Barca",
+      "target": "Rožňava"
+    }
+  ]
+}

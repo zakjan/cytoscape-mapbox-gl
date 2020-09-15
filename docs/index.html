@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>cytoscape-mapbox-gl</title>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://unpkg.com/cytoscape@3.15.2/dist/cytoscape.min.js"></script>
+  <script src="https://unpkg.com/jquery@3.5.1/dist/jquery.js"></script>
+  <script src="https://unpkg.com/cytoscape-panzoom@2.5.3/cytoscape-panzoom.js"></script>
+  <link href="https://unpkg.com/cytoscape-panzoom@2.5.3/cytoscape.js-panzoom.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.js"></script>
+  <script src="https://unpkg.com/cytoscape-edgehandles@3.6.0/cytoscape-edgehandles.js"></script>
+  <script src="https://unpkg.com/cytoscape-lasso@1.1.4/dist/cytoscape-lasso.min.js"></script>
+  <script src="https://unpkg.com/cytoscape-mapbox-gl@1.0.0/dist/cytoscape-mapbox-gl.js"></script>
+  <!-- <script src="../dist/cytoscape-mapbox-gl.js"></script> -->
+  <style>
+    body {
+      margin: 0;
+    }
+    #graph {
+      width: 100vw;
+      height: 100vh;
+    }
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 52px;
+    }
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="graph"></div>
+  <div id="controls">
+    <button id="mode">Toggle Map</button>
+    <select id="basemap" class="hide">
+      <option value="vector">Vector</option>
+      <option value="raster">Raster</option>
+    </select>
+    <div style="height: 10px"></div>
+    <button id="add-node">Add Node</button>
+    <button id="reset-view">Reset View</button>
+  </div>
+
+<script>
+window.addEventListener('DOMContentLoaded', async () => {
+  const { nodes, edges } = await (await fetch('graph.json')).json();
+  const elements = [
+    ...nodes.map(node => ({ group: 'nodes', data: node })),
+    ...edges.map(edge => ({ group: 'edges', data: edge })),
+  ];
+
+  const cy = cytoscape({
+    container: document.getElementById('graph'),
+    elements,
+    layout: {
+      name: 'cose',
+      animate: false,
+      nodeRepulsion: 1000000
+    },
+    style: [
+      {
+        selector: 'node',
+        style: {
+          'border-color': '#ffffff',
+          'border-width': 2,
+          'background-color': '#1f77b4',
+          'background-image': 'data:image/svg+xml;utf8,' + encodeURIComponent(`<svg width="1792" height="1792" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 0q185 0 316.5 93.5t131.5 226.5v896q0 130-125.5 222t-305.5 97l213 202q16 15 8 35t-30 20h-1056q-22 0-30-20t8-35l213-202q-180-5-305.5-97t-125.5-222v-896q0-133 131.5-226.5t316.5-93.5h640zm-320 1344q80 0 136-56t56-136-56-136-136-56-136 56-56 136 56 136 136 56zm576-576v-512h-1152v512h1152z" fill="#fff"/></svg>`),
+          'background-width': '60%',
+          'background-height': '60%',
+          'color': '#333333',
+          'label': 'data(id)',
+          'text-valign': 'bottom',
+          'text-margin-y': 6,
+          'text-background-color': '#ffffff',
+          'text-background-opacity': 0.5,
+          'text-background-padding': 4,
+        }
+      },
+      {
+        selector: 'node.hover',
+        style: {
+          'border-color': '#000000',
+          'text-background-color': '#eeeeee',
+          'text-background-opacity': 1
+        }
+      },
+      {
+        selector: 'node:selected',
+        style: {
+          'border-color': '#ff0000',
+          'border-width': 6,
+          'border-opacity': 0.5
+        }
+      },
+      {
+        selector: 'edge',
+        style: {
+          'line-color': '#cccccc'
+        }
+      },
+      {
+        selector: 'edge.hover',
+        style: {
+          'line-color': '#999999'
+        }
+      },
+      // edgehandles
+      {
+        selector: '.eh-handle',
+        style: {
+          'background-color': 'red',
+          'background-image': [],
+          'width': 12,
+          'height': 12,
+          'shape': 'ellipse',
+          'overlay-opacity': 0,
+          'border-width': 12,
+          'border-opacity': 0,
+          'label': ''
+        }
+      },
+      {
+        selector: '.eh-hover',
+        style: {
+          'background-color': 'red'
+        }
+      },
+      {
+        selector: '.eh-source',
+        style: {
+          'border-width': 2,
+          'border-color': 'red'
+        }
+      },
+      {
+        selector: '.eh-target',
+        style: {
+          'border-width': 2,
+          'border-color': 'red'
+        }
+      },
+      {
+        selector: '.eh-preview, .eh-ghost-edge',
+        style: {
+          'background-color': 'red',
+          'line-color': 'red',
+          'target-arrow-color': 'red',
+          'source-arrow-color': 'red'
+        }
+      },
+      {
+        selector: '.eh-ghost-edge.eh-preview-active',
+        style: {
+          'opacity': 0
+        }
+      }
+    ]
+  });
+  cy.panzoom();
+  cy.edgehandles();
+  cy.lassoSelectionEnabled(true);
+
+  cy.on('mouseover', '*', e => {
+    e.target.addClass('hover');
+    e.cy.container().style.cursor = 'pointer';
+  });
+  cy.on('mouseout', '*', e => {
+    e.target.removeClass('hover');
+    e.cy.container().style.cursor = 'default';
+  });
+
+  let cyMap;
+  const toggleMap = () => {
+    if (!cyMap) {
+      cy.panzoom('destroy');
+
+      cyMap = cy.mapboxgl({
+        accessToken: 'pk.eyJ1IjoiemFramFuIiwiYSI6ImNrZjVjeXVmYjBseDQyem1kcHU3d3FxdHQifQ.NxZLZbjHrnz8v1rNUwW3YA', // cytoscape-mapbox-gl token
+        style: 'mapbox://styles/mapbox/streets-v11'
+      }, {
+        getPosition: (node) => {
+          return [node.data('lng'), node.data('lat')];
+        },
+        setPosition: (node, lngLat) => {
+          node.data('lng', lngLat.lng);
+          node.data('lat', lngLat.lat);
+          console.log(node.id(), lngLat);
+        },
+        animate: true,
+        animationDuration: 1000,
+      });
+      cyMap.map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+
+      document.getElementById('basemap').classList.remove('hide');
+    } else {
+      cyMap.destroy();
+      cyMap = undefined;
+
+      cy.panzoom();
+      document.getElementById('basemap').classList.add('hide');
+    }
+  };
+  document.getElementById('mode').addEventListener('click', toggleMap);
+  cy.ready(() => toggleMap());
+  
+  const updateBasemap = () => {
+    const basemap = document.getElementById('basemap').value;
+    if (basemap === 'vector') {
+      cyMap.map.setStyle('mapbox://styles/mapbox/streets-v11', { diff: false });
+    } else if (basemap === 'raster') {
+      cyMap.map.setStyle({
+        'version': 8,
+        'sources': {
+          'raster-tiles': {
+            'type': 'raster',
+            'tiles': ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+            'tileSize': 256,
+            'attribution': '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }
+        },
+        'layers': [
+          {
+            'id': 'raster-tiles',
+            'type': 'raster',
+            'source': 'raster-tiles',
+            'minzoom': 0,
+            'maxzoom': 19
+          }
+        ]
+      }, { diff: false });
+    }
+  }
+  document.getElementById('basemap').addEventListener('change', updateBasemap);
+
+  const minLon = cy.nodes().reduce((acc, node) => Math.min(acc, node.data('lon')), Infinity);
+  const maxLon = cy.nodes().reduce((acc, node) => Math.max(acc, node.data('lon')), -Infinity);
+  const minLat = cy.nodes().reduce((acc, node) => Math.min(acc, node.data('lat')), Infinity);
+  const maxLat = cy.nodes().reduce((acc, node) => Math.max(acc, node.data('lat')), -Infinity);
+  const minX = cy.nodes().reduce((acc, node) => Math.min(acc, node.position('x')), Infinity);
+  const maxX = cy.nodes().reduce((acc, node) => Math.max(acc, node.position('x')), -Infinity);
+  const minY = cy.nodes().reduce((acc, node) => Math.min(acc, node.position('y')), Infinity);
+  const maxY = cy.nodes().reduce((acc, node) => Math.max(acc, node.position('y')), -Infinity);
+  const addNode = () => {
+    const randomId = Math.floor(Math.random() * 10e12).toString(36);
+    const randomLon = minLon + Math.random() * (maxLon - minLon);
+    const randomLat = minLat + Math.random() * (maxLat - minLat);
+    const randomX = minX + Math.random() * (maxX - minX);
+    const randomY = minY + Math.random() * (maxY - minY);
+
+    cy.add({
+      group: 'nodes',
+      data: { id: randomId, lon: randomLon, lat: randomLat },
+      position: { x: randomX, y: randomY }
+    });
+  };
+  document.getElementById('add-node').addEventListener('click', addNode);
+
+  const resetView = () => {
+    if (!cyMap) {
+      cy.fit(undefined, 50);
+    } else {
+      cyMap.fit(undefined, 50);
+    }
+  };
+  document.getElementById('reset-view').addEventListener('click', resetView);
+});
+</script>
+</body>
+</html>
