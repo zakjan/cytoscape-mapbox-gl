@@ -59,9 +59,7 @@ export interface MapboxglHandlerOptions {
   animationDuration?: number;
 }
 
-export class MapboxglHandler {
-  constructor(cy: cytoscape.Core, mapboxOptions: mapboxgl.MapboxOptions, options: MapboxglHandlerOptions);
-}
+const cyMap = cy.mapboxgl(mapboxOptions: mapboxgl.MapboxOptions, options: MapboxglHandlerOptions);
 ```
 
 - `mapboxglOptions` - see [Mapbox GL JS docs](https://docs.mapbox.com/mapbox-gl-js/api/map/) for detailed documentation
@@ -84,7 +82,7 @@ const cyMap = cy.mapboxgl(..., {
 });
 ```
 
-### Enable node dragging
+### Node dragging
 
 ```
 const cyMap = cy.mapboxgl(..., {
