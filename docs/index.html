@@ -237,8 +237,8 @@ window.addEventListener('DOMContentLoaded', async () => {
   }
   document.getElementById('basemap').addEventListener('change', updateBasemap);
 
-  const minLon = cy.nodes().reduce((acc, node) => Math.min(acc, node.data('lon')), Infinity);
-  const maxLon = cy.nodes().reduce((acc, node) => Math.max(acc, node.data('lon')), -Infinity);
+  const minLng = cy.nodes().reduce((acc, node) => Math.min(acc, node.data('lng')), Infinity);
+  const maxLng = cy.nodes().reduce((acc, node) => Math.max(acc, node.data('lng')), -Infinity);
   const minLat = cy.nodes().reduce((acc, node) => Math.min(acc, node.data('lat')), Infinity);
   const maxLat = cy.nodes().reduce((acc, node) => Math.max(acc, node.data('lat')), -Infinity);
   const minX = cy.nodes().reduce((acc, node) => Math.min(acc, node.position('x')), Infinity);
@@ -247,14 +247,14 @@ window.addEventListener('DOMContentLoaded', async () => {
   const maxY = cy.nodes().reduce((acc, node) => Math.max(acc, node.position('y')), -Infinity);
   const addNode = () => {
     const randomId = Math.floor(Math.random() * 10e12).toString(36);
-    const randomLon = minLon + Math.random() * (maxLon - minLon);
+    const randomLng = minLng + Math.random() * (maxLng - minLng);
     const randomLat = minLat + Math.random() * (maxLat - minLat);
     const randomX = minX + Math.random() * (maxX - minX);
     const randomY = minY + Math.random() * (maxY - minY);
 
     cy.add({
       group: 'nodes',
-      data: { id: randomId, lon: randomLon, lat: randomLat },
+      data: { id: randomId, lng: randomLng, lat: randomLat },
       position: { x: randomX, y: randomY }
     });
   };
