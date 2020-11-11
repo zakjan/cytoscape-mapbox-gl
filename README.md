@@ -69,12 +69,14 @@ const cyMap = cy.mapboxgl(mapboxOptions: mapboxgl.MapboxOptions, options: Mapbox
   - `animate` - animate the transition between graph and map mode
   - `animateDuration` - animation duration for the transition between graph and map mode
 
-If you don't provide `setPosition` option, it's important to disable node dragging with Cytoscape methods (e.g. with `cy.autoungrabify(true)`. If node dragging is enabled without `setPosition`, or `setPosition` doesn't save node position, it is reverted back to the original position after node dragging is finished. This behavior can be also used for cancelling.
+If no `setPosition` option is provided, it's important to disable node dragging with Cytoscape methods, e.g. with `cy.autoungrabify(true)`.
+
+If node dragging is kept enabled and no `setPosition` option is provided, or `setPosition` returns without saving, node position is reverted back to the original position after node dragging is finished. This behavior can be also used for cancelling.
 
 ### Basic
 
 ```
-cy.autoungrabify(true);
+cy.autoungrabify(true); // disable node dragging
 const cyMap = cy.mapboxgl(..., {
   getPosition: (node) => {
     return [node.data('lng'), node.data('lat')];
@@ -82,7 +84,7 @@ const cyMap = cy.mapboxgl(..., {
 });
 ```
 
-### Node dragging
+### Node dragging enabled
 
 ```
 const cyMap = cy.mapboxgl(..., {
@@ -172,6 +174,7 @@ cyMap.map.addControl(new mapboxgl.NavigationControl(), 'top-left');
 ### Destroy
 
 ```
+cy.autoungrabify(false); // enable node dragging, if node dragging was disabled earlier with `cy.autoungrabify(true)`
 cyMap.destroy();
 ```
 
