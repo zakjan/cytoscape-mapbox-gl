@@ -207,7 +207,7 @@ export class MapboxglHandler {
     }));
 
     const newPositions = /** @type cytoscape.NodePositionMap */ (Object.fromEntries(this.cy.nodes().map(node => {
-      return [node.id(), {...this.getGeographicPosition(node)}];
+      return [node.id(), this.getGeographicPosition(node)];
     })));
 
     this.cy.layout({
@@ -231,16 +231,11 @@ export class MapboxglHandler {
     })));
 
     const newPositions = /** @type cytoscape.NodePositionMap */ (Object.fromEntries(
-      /** @type [string, cytoscape.Position][] */ (nodes.map(node => {
-        return [node.id(), {...this.getGeographicPosition(node)}];
-      })).filter(([id, position]) => {
+      /** @type [string, cytoscape.Position | undefined][] */ (nodes.map(node => {
+        return [node.id(), this.getGeographicPosition(node)];
+      })).filter(([id, newPosition]) => {
         const currentPosition = currentPositions[id];
-        return (
-          position.x != undefined &&
-          position.y != undefined &&
-          position.x !== currentPosition.x &&
-          position.y !== currentPosition.y
-        );
+        return newPosition && !this.arePositionsEqual(currentPosition, newPosition);
       })
     ));
 
@@ -409,5 +404,15 @@ export class MapboxglHandler {
 
     const position = this.map.project(lngLat);
     return position;
+  }
+
+  /**
+   * @private
+   * @param {cytoscape.Position} position1
+   * @param {cytoscape.Position} position2
+   * @return {boolean}
+   */
+  arePositionsEqual(position1, position2) {
+    return position1.x === position2.x && position1.y === position2.y;
   }
 }
