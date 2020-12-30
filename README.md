@@ -10,6 +10,8 @@ Mapbox GL plugin for Cytoscape
 
 <img src="docs/screenshot@2x.jpg" alt="Screenshot" width="640" height="320">
 
+Compatible with Mapbox GL v1.13 or earlier. Compatibility with v2 is not guaranteed yet due to [license change](https://github.com/mapbox/mapbox-gl-js/issues/10162).
+
 Compatible with Cytoscape plugins:
 
 - [cytoscape-edgehandles](https://github.com/cytoscape/cytoscape.js-edgehandles)
@@ -31,9 +33,9 @@ npm install mapbox-gl-js cytoscape-mapbox-gl
 or
 
 ```
-<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
-<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet">
-<script src="https://unpkg.com/cytoscape-mapbox-gl@1.0.0/dist/cytoscape-mapbox-gl.min.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://unpkg.com/cytoscape-mapbox-gl@1.0.1/dist/cytoscape-mapbox-gl.min.js"></script>
 ```
 
 ## Usage

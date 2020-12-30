@@ -1,6 +1,6 @@
 {
   "name": "cytoscape-mapbox-gl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mapbox GL plugin for Cytoscape",
   "keywords": [
     "cytoscape",
@@ -20,7 +20,7 @@
   "dependencies": {},
   "peerDependencies": {
     "cytoscape": "^3.15.2",
-    "mapbox-gl": "^1.12.0"
+    "mapbox-gl": "^1.13.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
@@ -32,11 +32,11 @@
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@types/cytoscape": "^3.14.8",
-    "@types/mapbox-gl": "^1.12.5",
+    "@types/mapbox-gl": "^1.13.0",
     "cytoscape": "^3.15.2",
     "jest": "^26.1.0",
     "jest-simple-summary": "^1.0.2",
-    "mapbox-gl": "^1.12.0",
+    "mapbox-gl": "^1.13.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.22.2",
     "rollup-plugin-terser": "^6.1.0",
