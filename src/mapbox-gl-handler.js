@@ -13,6 +13,7 @@ function isMultSelKeyDown(event) {
 
 const DEFAULT_FIT_PADDING = 50;
 const DEFAULT_ANIMATION_DURATION = 500;
+const HIDDEN_CLASS = 'cytoscape-mapbox-gl__hidden';
 
 export class MapboxglHandler {
   /** @type cytoscape.Core */
@@ -202,17 +203,27 @@ export class MapboxglHandler {
    * @private
    */
   enableGeographicPositions() {
-    this.originalPositions = Object.fromEntries(this.cy.nodes().map(node => {
+    const nodes = this.cy.nodes();
+
+    this.originalPositions = Object.fromEntries(nodes.map(node => {
       return [node.id(), {...node.position()}];
     }));
 
-    const newPositions = /** @type cytoscape.NodePositionMap */ (Object.fromEntries(this.cy.nodes().map(node => {
-      return [node.id(), this.getGeographicPosition(node)];
-    })));
+    const positions = /** @type cytoscape.NodePositionMap */ (Object.fromEntries(
+      /** @type [string, cytoscape.Position | undefined][] */ (nodes.map(node => {
+        return [node.id(), this.getGeographicPosition(node)];
+      })).filter(([_id, position]) => {
+        return !!position;
+      })
+    ));
+
+    // hide nodes without position
+    const nodesWithoutPosition = nodes.filter(node => !positions[node.id()]);
+    nodesWithoutPosition.addClass(HIDDEN_CLASS).style('display', 'none');
 
     this.cy.layout({
       name: 'preset',
-      positions: newPositions,
+      positions: positions,
       fit: false,
       animate: this.options.animate,
       animationDuration: this.options.animationDuration ?? DEFAULT_ANIMATION_DURATION,
@@ -225,23 +236,32 @@ export class MapboxglHandler {
    * @param {cytoscape.NodeCollection} nodes
    */
   updateGeographicPositions(nodes = this.cy.nodes()) {
+    const positions = /** @type cytoscape.NodePositionMap */ (Object.fromEntries(
+      /** @type [string, cytoscape.Position | undefined][] */ (nodes.map(node => {
+        return [node.id(), this.getGeographicPosition(node)];
+      })).filter(([_id, position]) => {
+        return !!position;
+      })
+    ));
+
     // update only positions which have changed, for cytoscape-edgehandles compatibility
     const currentPositions = /** @type cytoscape.NodePositionMap */ (Object.fromEntries(nodes.map(node => {
       return [node.id(), {...node.position()}];
     })));
-
-    const newPositions = /** @type cytoscape.NodePositionMap */ (Object.fromEntries(
-      /** @type [string, cytoscape.Position | undefined][] */ (nodes.map(node => {
-        return [node.id(), this.getGeographicPosition(node)];
-      })).filter(([id, newPosition]) => {
+    const updatedPositions = /** @type cytoscape.NodePositionMap */ (Object.fromEntries(
+      Object.entries(positions).filter(([id, position]) => {
         const currentPosition = currentPositions[id];
-        return newPosition && !this.arePositionsEqual(currentPosition, newPosition);
+        return !this.arePositionsEqual(currentPosition, position);
       })
     ));
 
+    // hide nodes without position
+    const nodesWithoutPosition = nodes.filter(node => !positions[node.id()]);
+    nodesWithoutPosition.addClass(HIDDEN_CLASS).style('display', 'none');
+
     this.cy.layout({
       name: 'preset',
-      positions: newPositions,
+      positions: updatedPositions,
       fit: false,
     }).run();
   }
@@ -250,6 +270,8 @@ export class MapboxglHandler {
    * @private
    */
   disableGeographicPositions() {
+    const nodes = this.cy.nodes();
+
     this.cy.layout({
       name: 'preset',
       positions: this.originalPositions,
@@ -257,6 +279,11 @@ export class MapboxglHandler {
       animate: this.options.animate,
       animationDuration: this.options.animationDuration ?? DEFAULT_ANIMATION_DURATION,
       animationEasing: 'ease-in-cubic',
+      stop: () => {
+        // show nodes without position
+        const nodesWithoutPosition = nodes.filter(node => node.hasClass(HIDDEN_CLASS));
+        nodesWithoutPosition.removeClass(HIDDEN_CLASS).style('display', null);
+      }
     }).run();
 
     this.originalPositions = undefined;
@@ -315,7 +342,8 @@ export class MapboxglHandler {
 
     this.originalPositions[node.id()] = {...node.position()};
 
-    this.updateGeographicPositions([node]);
+    const nodes = this.cy.collection().merge(node);
+    this.updateGeographicPositions(nodes);
   }
 
   /**
@@ -337,7 +365,8 @@ export class MapboxglHandler {
       this.options.setPosition(node, lngLat);
     }
 
-    this.updateGeographicPositions([node]);
+    const nodes = this.cy.collection().merge(node);
+    this.updateGeographicPositions(nodes);
   }
 
   /**

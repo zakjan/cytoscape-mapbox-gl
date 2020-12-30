@@ -52,6 +52,8 @@ window.addEventListener('DOMContentLoaded', async () => {
   const elements = [
     ...nodes.map(node => ({ group: 'nodes', data: node })),
     ...edges.map(edge => ({ group: 'edges', data: edge })),
+    { group: 'nodes', data: { id: 'dummy' } },
+    { group: 'edges', data: { source: 'dummy', target: 'Makov' } },
   ];
 
   const cy = cytoscape({
