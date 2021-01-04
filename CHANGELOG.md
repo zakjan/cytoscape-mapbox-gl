@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.1.1
+
 - fix unselecting by clicking outside
 
 ## 1.1.0
