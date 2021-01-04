@@ -42,6 +42,9 @@ export class MapboxglHandler {
   /** @type cytoscape.Position | undefined */
   originalPan;
 
+  /** @type boolean */
+  panning = false;
+
   onGraphContainerMouseDownBound = this.onGraphContainerMouseDown.bind(this);
   onGraphContainerMouseMoveBound = this.onGraphContainerMouseMove.bind(this);
   onGraphContainerWheelBound = this.onGraphContainerWheel.bind(this);
@@ -303,6 +306,12 @@ export class MapboxglHandler {
       this.dispatchMapEvent(event);
 
       document.addEventListener('mouseup', () => {
+        if (!this.panning) {
+          return;
+        }
+
+        this.panning = false;
+
         // prevent unselecting in Cytoscape mouseup
         this.cy.renderer().hoverData.dragged = true;
       }, { once: true });
@@ -319,6 +328,8 @@ export class MapboxglHandler {
       !isMultSelKeyDown(event) &&
       !this.cy.renderer().hoverData.down
     ) {
+      this.panning = true;
+
       this.dispatchMapEvent(event);
     }
   }
