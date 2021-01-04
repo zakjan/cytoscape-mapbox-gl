@@ -1,5 +1,7 @@
 # Changelog
 
+- fix unselecting by clicking outside
+
 ## 1.1.0
 
 - hide nodes without position
