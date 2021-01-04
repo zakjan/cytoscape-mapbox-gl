@@ -10,7 +10,7 @@ Mapbox GL plugin for Cytoscape
 
 <img src="docs/screenshot@2x.jpg" alt="Screenshot" width="640" height="320">
 
-Compatible with Mapbox GL v1.13 or earlier. Compatibility with v2 is not guaranteed yet due to [license change](https://github.com/mapbox/mapbox-gl-js/issues/10162).
+Compatible with Mapbox GL v1.13 or earlier. Compatibility with v2 is not guaranteed due to [license change](https://github.com/mapbox/mapbox-gl-js/issues/10162). Compatibility with MapLibre fork is under consideration.
 
 Compatible with Cytoscape plugins:
 
