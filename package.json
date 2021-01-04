@@ -1,6 +1,6 @@
 {
   "name": "cytoscape-mapbox-gl",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Mapbox GL plugin for Cytoscape",
   "keywords": [
     "cytoscape",
