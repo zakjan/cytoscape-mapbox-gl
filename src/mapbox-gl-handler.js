@@ -301,6 +301,11 @@ export class MapboxglHandler {
     ) {
       this.cy.renderer().hoverData.dragging = true; // cytoscape-lasso compatibility
       this.dispatchMapEvent(event);
+
+      document.addEventListener('mouseup', () => {
+        // prevent unselecting in Cytoscape mouseup
+        this.cy.renderer().hoverData.dragged = true;
+      }, { once: true });
     }
   }
 
