@@ -153,11 +153,11 @@ This requires [Maptiler](https://cloud.maptiler.com/) access token.
 ### Fit map to nodes
 
 ```
-cyMap.fit(nodes = this.cy.nodes(), padding = 0)
+cyMap.fit(nodes = this.cy.nodes(), options)
 ```
 
 - `nodes` - `cytoscape.NodeCollection`, the collection to fit to (default all nodes)
-- `padding` - `number`, an amount of padding (in rendered pixels) to have around the graph (default 0)
+- `options` - `mapboxgl.FitBoundsOptions`, see [Mapbox GL JS docs](https://docs.mapbox.com/mapbox-gl-js/api/map/#map#fitbounds) for detailed documentation
 
 ### Access Mapbox GL instance
 

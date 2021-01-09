@@ -270,7 +270,7 @@ window.addEventListener('DOMContentLoaded', async () => {
     if (!cyMap) {
       cy.fit(undefined, 50);
     } else {
-      cyMap.fit(undefined, 50);
+      cyMap.fit(undefined, { padding: 50 });
     }
   };
   document.getElementById('reset-view').addEventListener('click', resetView);

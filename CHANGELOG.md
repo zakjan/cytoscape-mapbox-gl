@@ -1,5 +1,6 @@
 # Changelog
 
+- update fit to accept mapboxgl.FitBoundsOptions
 - fix adding new edges
 
 ## 1.1.1

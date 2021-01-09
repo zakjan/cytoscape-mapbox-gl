@@ -102,7 +102,7 @@ export class MapboxglHandler {
       ...this.mapboxOptions,
       container: this.mapContainer,
     });
-    this.fit(undefined, DEFAULT_FIT_PADDING);
+    this.fit(undefined, { padding: DEFAULT_FIT_PADDING, animate: false });
 
     // Mapbox GL events
     this.map.on('move', this.onMapMoveBound);
@@ -191,15 +191,15 @@ export class MapboxglHandler {
 
   /**
    * @param {cytoscape.NodeCollection} nodes
-   * @param {number} padding
+   * @param {mapboxgl.FitBoundsOptions} options
    */
-  fit(nodes = this.cy.nodes(), padding = 0) {
+  fit(nodes = this.cy.nodes(), options) {
     const bounds = this.getNodeLngLatBounds(nodes);
     if (bounds.isEmpty()) {
       return;
     }
 
-    this.map.fitBounds(bounds, { padding: padding, animate: false });
+    this.map.fitBounds(bounds, options);
   }
 
   /**
