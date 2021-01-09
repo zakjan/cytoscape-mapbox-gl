@@ -239,10 +239,10 @@ window.addEventListener('DOMContentLoaded', async () => {
   }
   document.getElementById('basemap').addEventListener('change', updateBasemap);
 
-  const minLng = cy.nodes().reduce((acc, node) => Math.min(acc, node.data('lng')), Infinity);
-  const maxLng = cy.nodes().reduce((acc, node) => Math.max(acc, node.data('lng')), -Infinity);
-  const minLat = cy.nodes().reduce((acc, node) => Math.min(acc, node.data('lat')), Infinity);
-  const maxLat = cy.nodes().reduce((acc, node) => Math.max(acc, node.data('lat')), -Infinity);
+  const minLng = cy.nodes().reduce((acc, node) => Math.min(acc, node.data('lng') || acc), Infinity);
+  const maxLng = cy.nodes().reduce((acc, node) => Math.max(acc, node.data('lng') || acc), -Infinity);
+  const minLat = cy.nodes().reduce((acc, node) => Math.min(acc, node.data('lat') || acc), Infinity);
+  const maxLat = cy.nodes().reduce((acc, node) => Math.max(acc, node.data('lat') || acc), -Infinity);
   const minX = cy.nodes().reduce((acc, node) => Math.min(acc, node.position('x')), Infinity);
   const maxX = cy.nodes().reduce((acc, node) => Math.max(acc, node.position('x')), -Infinity);
   const minY = cy.nodes().reduce((acc, node) => Math.min(acc, node.position('y')), Infinity);
@@ -258,6 +258,10 @@ window.addEventListener('DOMContentLoaded', async () => {
       group: 'nodes',
       data: { id: randomId, lng: randomLng, lat: randomLat },
       position: { x: randomX, y: randomY }
+    });
+    cy.add({
+      group: 'edges',
+      data: { source: randomId, target: 'Makov' }
     });
   };
   document.getElementById('add-node').addEventListener('click', addNode);

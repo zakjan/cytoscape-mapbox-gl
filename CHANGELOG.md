@@ -1,5 +1,7 @@
 # Changelog
 
+- fix adding new edges
+
 ## 1.1.1
 
 - fix unselecting by clicking outside

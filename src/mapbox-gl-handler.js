@@ -354,6 +354,10 @@ export class MapboxglHandler {
    * @param {cytoscape.EventObject} event
    */
   onGraphAdd(event) {
+    if (!event.target.isNode()) {
+      return;
+    }
+
     const node = /** @type cytoscape.NodeSingular */ (event.target);
 
     this.originalPositions[node.id()] = {...node.position()};
