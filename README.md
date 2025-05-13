@@ -27,7 +27,7 @@ Incompatible with Cytoscape plugins:
 ## Install
 
 ```
-npm install mapbox-gl-js cytoscape-mapbox-gl
+npm install mapbox-gl cytoscape-mapbox-gl
 ```
 
 or
